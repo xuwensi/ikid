@@ -12,6 +12,7 @@ class SwitchingViewController: UIViewController {
     fileprivate var goodJokeVC : GoodJokeViewController! = nil
     fileprivate var punJokeVC : PunJokeViewController! = nil
     fileprivate var dadJokeVC : DadJokeViewController! = nil
+    fileprivate var knockJokeVC: KnockJokeViewController! = nil
     
     fileprivate func goodJokeBuilder() {
         if goodJokeVC == nil {
@@ -31,47 +32,104 @@ class SwitchingViewController: UIViewController {
         }
     }
     
+    fileprivate func knockJokeBuilder() {
+        if knockJokeVC == nil {
+            knockJokeVC = storyboard?.instantiateViewController(withIdentifier: "Knock") as? KnockJokeViewController
+        }
+    }
+    
     @IBAction func swichToGoodJoke(_ sender: Any) {
         goodJokeBuilder()
+        
+        UIView.beginAnimations("View Flip", context: nil)
+        UIView.setAnimationDuration(0.4)
+        UIView.setAnimationCurve(.easeInOut)
+        
         if punJokeVC != nil && punJokeVC?.view.superview != nil {
             UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
             goodJokeVC.view.frame = self.view.frame
             switchViewController(punJokeVC, goodJokeVC)
-        } else {
+        } else if dadJokeVC != nil && dadJokeVC?.view.superview != nil{
             UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
             goodJokeVC.view.frame = self.view.frame
             switchViewController(dadJokeVC, goodJokeVC)
+        } else {
+            UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
+            goodJokeVC.view.frame = self.view.frame
+            switchViewController(knockJokeVC, goodJokeVC)
         }
         UIView.commitAnimations()
     }
 
     @IBAction func switchToPunJoke(_ sender: Any) {
         punJokeBuilder()
+        
+        UIView.beginAnimations("View Flip", context: nil)
+        UIView.setAnimationDuration(0.4)
+        UIView.setAnimationCurve(.easeInOut)
+        
         if goodJokeVC != nil && goodJokeVC?.view.superview != nil {
             UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
             punJokeVC.view.frame = self.view.frame
             switchViewController(goodJokeVC, punJokeVC)
-        } else {
+        } else if dadJokeVC != nil && dadJokeVC?.view.superview != nil {
             UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
             punJokeVC.view.frame = self.view.frame
             switchViewController(dadJokeVC, punJokeVC)
+        } else {
+            UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
+            punJokeVC.view.frame = self.view.frame
+            switchViewController(knockJokeVC, punJokeVC)
         }
         UIView.commitAnimations()
     }
 
     @IBAction func switchToDadJoke(_ sender: Any) {
         dadJokeBuilder()
+        
+        UIView.beginAnimations("View Flip", context: nil)
+        UIView.setAnimationDuration(0.4)
+        UIView.setAnimationCurve(.easeInOut)
+        
         if goodJokeVC != nil && goodJokeVC?.view.superview != nil {
             UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
             dadJokeVC.view.frame = self.view.frame
             switchViewController(goodJokeVC, dadJokeVC)
-        } else {
+        } else if punJokeVC != nil && punJokeVC?.view.superview != nil {
             UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
             dadJokeVC.view.frame = self.view.frame
             switchViewController(punJokeVC, dadJokeVC)
+        } else {
+            UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
+            dadJokeVC.view.frame = self.view.frame
+            switchViewController(knockJokeVC, dadJokeVC)
         }
         UIView.commitAnimations()
     }
+    
+    @IBAction func switchToKnockJoke(_ sender: Any) {
+        knockJokeBuilder()
+        
+        UIView.beginAnimations("View Flip", context: nil)
+        UIView.setAnimationDuration(0.4)
+        UIView.setAnimationCurve(.easeInOut)
+        
+        if goodJokeVC != nil && goodJokeVC?.view.superview != nil {
+            UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
+            knockJokeVC.view.frame = self.view.frame
+            switchViewController(goodJokeVC, knockJokeVC)
+        } else if punJokeVC != nil && punJokeVC?.view.superview != nil {
+            UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
+            knockJokeVC.view.frame = self.view.frame
+            switchViewController(punJokeVC, knockJokeVC)
+        } else {
+            UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
+            knockJokeVC.view.frame = self.view.frame
+            switchViewController(dadJokeVC, knockJokeVC)
+        }
+        UIView.commitAnimations()
+    }
+    
     
     fileprivate func switchViewController(_ from: UIViewController?, _ to: UIViewController?) {
         if from != nil {

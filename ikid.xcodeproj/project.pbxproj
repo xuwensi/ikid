@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FEF05BA281FAE7700625284 /* KnockJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF05B9281FAE7700625284 /* KnockJokeViewController.swift */; };
+		1FEF05BD281FBD3400625284 /* NextKnockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF05BC281FBD3400625284 /* NextKnockViewController.swift */; };
 		1FFB9DE9281C9A4300EB4CFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB9DE8281C9A4300EB4CFC /* AppDelegate.swift */; };
 		1FFB9DEB281C9A4300EB4CFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB9DEA281C9A4300EB4CFC /* SceneDelegate.swift */; };
 		1FFB9DED281C9A4300EB4CFC /* SwitchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB9DEC281C9A4300EB4CFC /* SwitchingViewController.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FEF05B9281FAE7700625284 /* KnockJokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnockJokeViewController.swift; sourceTree = "<group>"; };
+		1FEF05BC281FBD3400625284 /* NextKnockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextKnockViewController.swift; sourceTree = "<group>"; };
 		1FFB9DE5281C9A4300EB4CFC /* ikid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ikid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FFB9DE8281C9A4300EB4CFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FFB9DEA281C9A4300EB4CFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 				1FFB9E02281E188200EB4CFC /* NextGoodViewController.swift */,
 				1FFB9E04281E18F700EB4CFC /* NextPunViewController.swift */,
 				1FFB9E06281E190200EB4CFC /* NextDadViewController.swift */,
+				1FEF05B9281FAE7700625284 /* KnockJokeViewController.swift */,
+				1FEF05BC281FBD3400625284 /* NextKnockViewController.swift */,
 				1FFB9DEE281C9A4300EB4CFC /* Main.storyboard */,
 				1FFB9DF1281C9A4400EB4CFC /* Assets.xcassets */,
 				1FFB9DF3281C9A4400EB4CFC /* LaunchScreen.storyboard */,
@@ -160,11 +166,13 @@
 				1FFB9E07281E190200EB4CFC /* NextDadViewController.swift in Sources */,
 				1FFB9DED281C9A4300EB4CFC /* SwitchingViewController.swift in Sources */,
 				1FFB9E03281E188200EB4CFC /* NextGoodViewController.swift in Sources */,
+				1FEF05BA281FAE7700625284 /* KnockJokeViewController.swift in Sources */,
 				1FFB9DE9281C9A4300EB4CFC /* AppDelegate.swift in Sources */,
 				1FFB9DEB281C9A4300EB4CFC /* SceneDelegate.swift in Sources */,
 				1FFB9DFF281CA29C00EB4CFC /* PunJokeViewController.swift in Sources */,
 				1FFB9E01281CA2AF00EB4CFC /* DadJokeViewController.swift in Sources */,
 				1FFB9E05281E18F700EB4CFC /* NextPunViewController.swift in Sources */,
+				1FEF05BD281FBD3400625284 /* NextKnockViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

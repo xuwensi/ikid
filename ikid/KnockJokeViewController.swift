@@ -1,19 +1,14 @@
 //
-//  NextDadViewController.swift
+//  KnockJokeViewController.swift
 //  ikid
 //
-//  Created by Wensi Xu on 4/30/22.
+//  Created by Wensi Xu on 5/1/22.
 //
 
 import UIKit
 
-class NextDadViewController: UIViewController {
-    
-    @IBAction func exitDadJoke(_ sender: Any) {
-        self.dismiss(animated: true)
-    }
-    
-    
+class KnockJokeViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
