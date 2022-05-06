@@ -8,7 +8,6 @@
 import UIKit
 
 class SwitchingViewController: UIViewController {
-
     fileprivate var goodJokeVC : GoodJokeViewController! = nil
     fileprivate var punJokeVC : PunJokeViewController! = nil
     fileprivate var dadJokeVC : DadJokeViewController! = nil
@@ -145,11 +144,36 @@ class SwitchingViewController: UIViewController {
         }
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+ 
+//        if let dadVC = children.first as? DadJokeViewController {
+//            dadVC.delegate = self
+//        }
     }
 
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//        if let dadVC = segue.destination as? DadJokeViewController {
+//            dadVC.delegate = self
+//        }
+//
+//    }
 
+//    func nextClicked(_ sender: Any) {
+//        print("!!!!!!!!!!!!!!!!!")
+//        secondGoodJokeBuilder()
+//        UIView.beginAnimations("View Flip", context: nil)
+//        UIView.setAnimationDuration(0.4)
+//        UIView.setAnimationCurve(.easeInOut)
+//
+//        if goodJokeVC != nil  {
+//            UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
+//            secondGoodJokeVC.view.frame = self.view.frame
+//            switchViewController(goodJokeVC, secondGoodJokeVC)
+//        }
+//        UIView.commitAnimations()
+//    }
 }
 

@@ -15,7 +15,7 @@ class NextKnockViewController: UIViewController {
     
     @IBOutlet weak var punchlineLabel: UILabel!
     
-    @IBOutlet weak var nextBtn: UIButton!
+    @IBOutlet weak   var nextBtn: UIButton!
     
     @IBAction func exitKnockJoke(_ sender: Any) {
         self.dismiss(animated: true)

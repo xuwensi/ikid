@@ -8,7 +8,11 @@
 import UIKit
 
 class NextPunViewController: UIViewController {
-
+    
+    var punchline = ""
+    
+    @IBOutlet weak var punchlineLabel: UILabel!
+    
     @IBAction func exitPunJoke(_ sender: Any) {
         self.dismiss(animated: true)
     }
@@ -17,6 +21,8 @@ class NextPunViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        modalTransitionStyle = .flipHorizontal
+        punchlineLabel.text = punchline
     }
     
 

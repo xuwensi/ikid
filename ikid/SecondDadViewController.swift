@@ -1,29 +1,20 @@
 //
-//  NextGoodViewController.swift
+//  SecondDadViewController.swift
 //  ikid
 //
-//  Created by Wensi Xu on 4/30/22.
+//  Created by Wensi Xu on 5/5/22.
 //
 
 import UIKit
 
-class NextGoodViewController: UIViewController {
+class SecondDadViewController: UIViewController {
 
-    @IBAction func exitGoodJoke(_ sender: Any) {
-        self.dismiss(animated: true)
-    }
-    
-//    override func loadView() {
-//        modalTransitionStyle = .flipHorizontal
-//        super.loadView()
-//    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        modalTransitionStyle = .flipHorizontal
     }
+    
     
 
     /*
