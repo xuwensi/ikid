@@ -7,15 +7,15 @@
 
 import UIKit
 
-//protocol dadJokeActionTeller {
-//    func nextClicked(_ sender: Any)
-//}
+protocol dadJokeActionTeller {
+    func nextClicked(_ sender: Any)
+}
 
 class DadJokeViewController: UIViewController {
-//    var delegate: dadJokeActionTeller?
+    var delegate: dadJokeActionTeller?
 
-//    fileprivate var dadJokeVC : DadJokeViewController! = nil
-//    fileprivate var secondDadJokeVC : SecondDadViewController! = nil
+    fileprivate var dadJokeVC : DadJokeViewController! = nil
+    fileprivate var secondDadJokeVC : SecondDadViewController! = nil
 
     let dadJokes : [String] = ["Why does ten plus ten equals eleven plus eleven?","I only know 25 letters of the alphabet. I don't know y."]
 

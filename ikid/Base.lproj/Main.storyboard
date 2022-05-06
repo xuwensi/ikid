@@ -241,15 +241,6 @@
                                     <action selector="backHome:" destination="eZB-BQ-Xsx" eventType="touchUpInside" id="Lnq-Vd-YKp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bg9-Z1-LQ8">
-                                <rect key="frame" x="46" y="666" width="76" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="test"/>
-                                <connections>
-                                    <action selector="testNext:" destination="eZB-BQ-Xsx" eventType="touchUpInside" id="4L0-0g-ymD"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bk8-8S-bwG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
